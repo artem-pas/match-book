@@ -1,0 +1,13 @@
+<div class="feed-page-wrapper">
+    <div class="feed-page-books">
+        <app-book-card
+            *ngFor="let book of books"
+            [imageSrc]="book.imageSrc"
+            [username]="book.username"
+            [userAvatarSrc]="book.userAvatarSrc"
+            [name]="book.name"
+            [author]="book.author"
+            [price]="book.price"
+        ></app-book-card>
+    </div>
+</div>
