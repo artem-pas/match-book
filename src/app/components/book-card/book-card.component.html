@@ -25,10 +25,14 @@
                 {{ author }}
             </div>
         </div>
-        <div class="book-card-price">
-            {{ price ? '$' : '' }}
-            {{ price ? price : 'free' }}
+        <div *ngIf="price; else elseBlock" class="book-card-price">
+            $ {{ price }}
         </div>
+        <ng-template #elseBlock>
+            <div class="book-card-price-free">
+                free
+            </div>
+        </ng-template>
     </div>
     <div class="book-card-extra">
     </div>

@@ -38,4 +38,19 @@ export const books = [
         author: 'Author 5',
         price: 8.99,
     },
+    {
+        imageSrc: 'https://via.placeholder.com/100',
+        username: 'User user 6',
+        userAvatarSrc: 'https://via.placeholder.com/20',
+        name: 'Book 6',
+        author: 'Author Author 6',
+    },
+    {
+        imageSrc: 'https://via.placeholder.com/100',
+        username: 'User 7',
+        userAvatarSrc: 'https://via.placeholder.com/20',
+        name: 'Book 7',
+        author: 'Author 7',
+        price: 18.99,
+    },
 ]

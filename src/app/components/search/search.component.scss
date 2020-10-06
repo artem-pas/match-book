@@ -1,0 +1,21 @@
+@import '../../shared/colors.scss';
+
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+    background-color: $light-gray-color;
+    border-radius: 0 0 2em 2em;
+
+    input {
+        margin: 1em 0;
+        padding: 1em;
+        width: 80%;
+        border-radius: 2em;
+        border: 1px solid #e8e8e8;
+    }
+
+    ::-webkit-input-placeholder {
+        color: $main-dark-blue-color;
+    }
+}

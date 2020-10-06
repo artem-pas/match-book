@@ -5,9 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FeedPage } from './pages/feed/feed.page';
 import { BookCardComponent } from './components/book-card/book-card.component';
+import { SearchComponent } from './components/search/search.component';
 
 const components = [
-  BookCardComponent
+  BookCardComponent,
+  SearchComponent
 ];
 
 const pages = [
@@ -18,7 +20,7 @@ const pages = [
   declarations: [
     AppComponent,
     ...components,
-    ...pages,
+    ...pages
   ],
   imports: [
     BrowserModule,
