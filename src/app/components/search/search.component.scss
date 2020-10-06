@@ -9,13 +9,15 @@
 
     input {
         margin: 1em 0;
-        padding: 1em;
-        width: 80%;
+        padding: 1em 0 1em 3em;
+        width: 75%;
         border-radius: 2em;
         border: 1px solid #e8e8e8;
+        background: no-repeat 1.2em/1.2em url('../../../assets/images/loupe.svg');
     }
 
     ::-webkit-input-placeholder {
         color: $main-dark-blue-color;
+        font-weight: bold;
     }
 }
