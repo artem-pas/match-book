@@ -2,14 +2,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+
+/* Pages */
 import { FeedPage } from './pages/feed/feed.page';
+
+/* Components */
+import { AppComponent } from './app.component';
 import { BookCardComponent } from './components/book-card/book-card.component';
 import { SearchComponent } from './components/search/search.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { MenuItemComponent } from './components/menu-item/menu-item.component';
 
 const components = [
   BookCardComponent,
-  SearchComponent
+  SearchComponent,
+  MenuComponent,
+  MenuItemComponent
 ];
 
 const pages = [
@@ -20,7 +28,7 @@ const pages = [
   declarations: [
     AppComponent,
     ...components,
-    ...pages
+    ...pages,
   ],
   imports: [
     BrowserModule,
