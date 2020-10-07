@@ -2,10 +2,10 @@
 
 .book-card-wrapper {
     display: flex;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
     max-height: 100px;
     margin: 1em;
-    border-radius: 25% 0 0 5%;
+    border-radius: 1.875em 0.3125em 0.3125em 0.3125em;
 
     .book-card-info {
         display: flex;
@@ -16,7 +16,7 @@
 
     .book-card-image {
         img {
-            border-radius: 25% 0 0 5%;
+            border-radius: 1.875em 0 0 0.3125em;
         }
     }
 
@@ -31,20 +31,26 @@
                 border-radius: 50%;
             }
         }
+
+        .book-card-username {
+            font-size: 0.875em;
+        }
     }
 
     .book-card-name {
-        font-weight: bold;
+        font-weight: 700;
         color: $main-dark-blue-color;
+        font-size: 1em;
     }
 
     .book-card-author {
-        font-size: 0.9em;
+        font-size: 0.875em;
         color: $gray-color;
     }
 
     .book-card-price, .book-card-price-free {
-        font-weight: bold;
+        font-weight: 700;
+        font-size: 1em;
     }
 
     .book-card-price-free {

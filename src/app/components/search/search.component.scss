@@ -3,6 +3,7 @@
 .search-wrapper {
     display: flex;
     justify-content: center;
+    position: relative;
     padding: 1em 0;
     background-color: $light-gray-color;
     border-radius: 0 0 2em 2em;
@@ -11,13 +12,21 @@
         margin: 1em 0;
         padding: 1em 0 1em 3em;
         width: 75%;
-        border-radius: 2em;
-        border: 1px solid #e8e8e8;
-        background: no-repeat 1.2em/1.2em url('../../../assets/images/loupe.svg');
+        border-radius: 2.0625em;
+        border: 1px solid #E4E7EA;
+        background: no-repeat 1.2em/1.2em url('../../../assets/images/search.svg');
     }
 
     ::-webkit-input-placeholder {
         color: $main-dark-blue-color;
-        font-weight: bold;
+        font-weight: 600;
+    }
+
+    .search-filter-icon {
+        img {
+            position: absolute;
+            bottom: 42%;
+            right: 12%;
+        }
     }
 }
