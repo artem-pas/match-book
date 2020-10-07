@@ -11,6 +11,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        width: 100%;
         margin-left: 1em;
     }
 
@@ -22,9 +23,17 @@
 
     .book-card-user {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .book-card-avatar-name {
+            display: flex;
+            align-items: center;
+        }
 
         .book-card-user-image {
+            display: flex;
+            align-items: center;
             margin-right: 0.5em;
 
             img {
@@ -34,6 +43,10 @@
 
         .book-card-username {
             font-size: 0.875em;
+        }
+
+        .book-card-more {
+            margin: 0.8125em 0.625em 0 0;
         }
     }
 

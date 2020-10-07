@@ -2,15 +2,18 @@ import { MenuItem } from './interfaces';
 
 export const MenuItemList: MenuItem[] = [
     {
-      iconSrc: 'https://via.placeholder.com/20',
-      text: 'Feed',
+        path: '/feed',
+        iconSrc: '../../assets/images/home.svg',
+        text: 'Feed',
     },
     {
-      iconSrc: 'https://via.placeholder.com/20',
-      text: 'Add Book',
+        path: '/add-book',
+        iconSrc: 'https://via.placeholder.com/20',
+        text: 'Add Book',
     },
     {
-      iconSrc: 'https://via.placeholder.com/20',
-      text: 'Profile',
+        path: '/profile',
+        iconSrc: '../../assets/images/user.svg',
+        text: 'Profile',
     },
 ]  

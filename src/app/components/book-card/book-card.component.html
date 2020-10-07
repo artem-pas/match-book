@@ -7,14 +7,22 @@
     </div>
     <div class="book-card-info">
         <div class="book-card-user">
-            <div class="book-card-user-image">
-                <img
-                    [src]="userAvatarSrc"
-                    alt="user-avatar"
-                >
+            <div class="book-card-avatar-name">
+                <div class="book-card-user-image">
+                    <img
+                        [src]="userAvatarSrc"
+                        alt="user-avatar"
+                    >
+                </div>
+                <div class="book-card-username">
+                    {{ username }}
+                </div>
             </div>
-            <div class="book-card-username">
-                {{ username }}
+            <div class="book-card-more">
+                <img
+                    src="../../../assets/images/more-vertical.svg"
+                    alt="book-card-more-icon"
+                >
             </div>
         </div>
         <div>
