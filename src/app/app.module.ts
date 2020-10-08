@@ -1,10 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { environment } from '../environments/environment';
+
+/* NgRx */
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { StoreModule } from '@ngrx/store';
+import { bookReducer } from './store/reducers/book.reducer';
 
 import { AppRoutingModule } from './app-routing.module';
 
 /* Pages */
 import { FeedPage } from './pages/feed/feed.page';
+import { BookReviewPage } from './pages/book-review/book-review.page';
 
 /* Components */
 import { AppComponent } from './app.component';
@@ -21,7 +28,8 @@ const components = [
 ];
 
 const pages = [
-  FeedPage
+  FeedPage,
+  BookReviewPage,
 ];
 
 @NgModule({
@@ -32,7 +40,12 @@ const pages = [
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.forRoot({ books: bookReducer }),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25,
+      logOnly: environment.production,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

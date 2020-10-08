@@ -1,4 +1,6 @@
-export const books = [
+import { Book } from './interfaces';
+
+export const books: Book[] = [
     {
         imageSrc: 'https://via.placeholder.com/100',
         username: 'User 1',
@@ -6,6 +8,7 @@ export const books = [
         name: 'Book 1',
         author: 'Author 1',
         price: 2.99,
+        id: 1,
     },
     {
         imageSrc: 'https://via.placeholder.com/100',
@@ -14,6 +17,7 @@ export const books = [
         name: 'Book 2',
         author: 'Author 2',
         price: 14,
+        id: 2,
     },
     {
         imageSrc: 'https://via.placeholder.com/100',
@@ -21,6 +25,7 @@ export const books = [
         userAvatarSrc: 'https://via.placeholder.com/20',
         name: 'Book 3',
         author: 'Author 3',
+        id: 3,
     },
     {
         imageSrc: 'https://via.placeholder.com/100',
@@ -29,6 +34,7 @@ export const books = [
         name: 'Book 4',
         author: 'Author 4',
         price: 4.56,
+        id: 4,
     },
     {
         imageSrc: 'https://via.placeholder.com/100',
@@ -37,6 +43,7 @@ export const books = [
         name: 'Book 5',
         author: 'Author 5',
         price: 8.99,
+        id: 5,
     },
     {
         imageSrc: 'https://via.placeholder.com/100',
@@ -44,6 +51,7 @@ export const books = [
         userAvatarSrc: 'https://via.placeholder.com/20',
         name: 'Book 6',
         author: 'Author Author 6',
+        id: 6,
     },
     {
         imageSrc: 'https://via.placeholder.com/100',
@@ -52,5 +60,6 @@ export const books = [
         name: 'Book 7',
         author: 'Author 7',
         price: 18.99,
+        id: 7,
     },
 ]
