@@ -6,4 +6,5 @@ export interface Book {
     author: string,
     price?: number,
     id: number,
+    review?: string,
 }

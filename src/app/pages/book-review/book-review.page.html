@@ -1,0 +1,53 @@
+<div class="book-review-wrapper">
+    <div class="book-review-image">
+        <img
+            [src]="book.imageSrc"
+            alt="book-review-image"
+        />
+    </div>
+    <div class="book-review-info">
+        <div class="book-review-user">
+            <div class="book-review-avatar-name">
+                <div class="book-review-user-image">
+                    <img
+                        [src]="book.userAvatarSrc"
+                        alt="user-avatar"
+                    >
+                </div>
+                <div class="book-review-username">
+                    {{ book.username }}
+                </div>
+            </div>
+        </div>
+        <div>
+            <button (click)="goToFeed()">
+                <img
+                    src="../../../assets/images/arrow-left.svg"
+                    alt="arrow-left"
+                >
+            </button>
+            <div class="book-review-name">
+                {{ book.name }}
+            </div>
+        </div>
+        <div class="book-review-author">
+            {{ book.author }}
+        </div>
+        <div *ngIf="book.price; else elseBlock" class="book-review-price">
+            $ {{ book.price }}
+        </div>
+        <ng-template #elseBlock>
+            <div class="book-review-price-free">
+                free
+            </div>
+        </ng-template>
+    </div>
+    <div class="book-review-text-wrapper">
+        <header>
+            Review:
+        </header>
+        <div class="book-review-text-content">
+            {{ book.review }}
+        </div>
+    </div>
+</div>

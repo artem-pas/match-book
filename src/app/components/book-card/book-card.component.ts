@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import * as _ from 'lodash';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-book-card',
@@ -13,6 +14,7 @@ export class BookCardComponent implements OnInit {
   public name: string;
   public author: string;
   public price: number;
+  public id: number;
   
   @Input('imageSrc') 
   set ImageSrc (value: string) {
@@ -68,9 +70,22 @@ export class BookCardComponent implements OnInit {
     this.price = value;
   }
 
-  constructor() { }
+  @Input('id') 
+  set Id (value: number) {
+    if (!_.isNumber(value)) {
+      return;
+    }
+
+    this.id = value;
+  }
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  public navigateToBook(): void {
+    this.router.navigate([`/books/${this.id}`]);
   }
 
 }

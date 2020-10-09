@@ -1,0 +1,29 @@
+@import '../../shared/colors.scss';
+
+.book-review-wrapper {
+    margin: 0 1.875em;
+
+    .book-review-info {
+        .book-review-back {
+            background-image: url('../../../assets/images/arrow-left.svg');
+            border: none;
+            width: 15px;
+            height: 15px;
+            background-color: white;
+        }
+    }
+
+    .book-review-text-wrapper {
+        header {
+            color: $main-dark-blue-color;
+            font-size: 1.125em;
+            font-weight: bold;
+        }
+
+        .book-review-text-content {
+            font-size: 0.75em;
+            font-weight: 400;
+            color: $gray-color;
+        }
+    }
+}
