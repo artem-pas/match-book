@@ -1,5 +1,4 @@
 import { createReducer, on } from '@ngrx/store';
-import * as _ from 'lodash';
 import { setBooks, addBook, removeBook } from '../actions/book.actions';
 
 /* Interfaces */

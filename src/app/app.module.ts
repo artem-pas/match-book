@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 /* Pages */
 import { FeedPage } from './pages/feed/feed.page';
 import { BookReviewPage } from './pages/book-review/book-review.page';
+import { AddBookPage } from './pages/add-book/add-book.page';
+import { ProfilePage } from './pages/profile/profile.page';
 
 /* Components */
 import { AppComponent } from './app.component';
@@ -30,6 +32,8 @@ const components = [
 const pages = [
   FeedPage,
   BookReviewPage,
+  AddBookPage,
+  ProfilePage,
 ];
 
 @NgModule({

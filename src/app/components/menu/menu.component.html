@@ -2,6 +2,8 @@
     <app-menu-item
         *ngFor="let menuItem of menu"
         [iconSrc]="menuItem.iconSrc"
-        [text]="menuItem.text"
+        [activeIconSrc]="menuItem.activeIconSrc"
+        [content]="menuItem.content"
+        [path]="menuItem.path"
     ></app-menu-item>
 </div>

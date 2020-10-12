@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import * as _ from 'lodash';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu-item',
@@ -8,7 +9,9 @@ import * as _ from 'lodash';
 })
 export class MenuItemComponent implements OnInit {
   public iconSrc: string;
-  public text: string;
+  public activeIconSrc: string;
+  public content: string;
+  public path: string;
   
   @Input('iconSrc') 
   set IconSrc (value: string) {
@@ -19,19 +22,48 @@ export class MenuItemComponent implements OnInit {
     this.iconSrc = value;
   }
 
-  @Input('text') 
-  set Text (value: string) {
+  @Input('activeIconSrc') 
+  set ActiveIconSrc (value: string) {
     if (!_.isString(value)) {
       return;
     }
 
-    this.text = value;
+    this.activeIconSrc = value;
   }
 
+  @Input('content') 
+  set Content (value: string) {
+    if (!_.isString(value)) {
+      return;
+    }
 
-  constructor() { }
+    this.content = value;
+  }
+
+  @Input('path') 
+  set Path (value: string) {
+    if (!_.isString(value)) {
+      return;
+    }
+
+    this.path = value;
+  }
+
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  public goToPage(): void {
+    this.router.navigate([`${this.path}`]);
+  }
+
+  public getNavigationImageSrc(isActive: boolean): string {
+    return isActive && this.activeIconSrc
+      ? this.activeIconSrc
+      : this.iconSrc;
   }
 
 }

@@ -1,5 +1,6 @@
 export interface MenuItem {
     path?: string,
     iconSrc: string,
-    text: string,
+    activeIconSrc?: string,
+    content: string,
 }

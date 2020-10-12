@@ -1,7 +1,14 @@
-<div class="menu-item-wrapper">
+<div class="menu-item-wrapper" [routerLink]="[path]">
     <img
-        [src]="iconSrc"
+        [src]="getNavigationImageSrc(rla.isActive)"
         alt="menu-item-icon"
+        class="menu-item-icon"
     >
-    <span>{{ text }}</span>
+    <span
+        class="menu-item-button-content"
+        routerLinkActive="active"
+        #rla="routerLinkActive"
+    >
+        {{ content }}
+    </span>
 </div>

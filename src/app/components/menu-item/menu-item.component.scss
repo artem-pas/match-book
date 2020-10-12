@@ -1,3 +1,5 @@
+@import '../../shared/colors.scss';
+
 .menu-item-wrapper {
     display: flex;
     flex-direction: column;
@@ -5,7 +7,11 @@
     justify-content: center;
     height: 100%;
 
-    span {
+    .menu-item-button-content {
         padding-top: 0.5em;
+
+        &.active {
+            color: $main-light-blue-color;
+        }
     }
 }
