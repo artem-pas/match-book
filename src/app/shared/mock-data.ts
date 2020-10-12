@@ -3,6 +3,7 @@ import { Book } from './interfaces';
 export const books: Book[] = [
     {
         imageSrc: 'https://via.placeholder.com/100',
+        bigImageSrc: 'https://via.placeholder.com/400',
         username: 'User 1',
         userAvatarSrc: 'https://via.placeholder.com/20',
         name: 'Book 1',
@@ -24,6 +25,7 @@ export const books: Book[] = [
     },
     {
         imageSrc: 'https://via.placeholder.com/100',
+        bigImageSrc: 'https://via.placeholder.com/400',
         username: 'User 2',
         userAvatarSrc: 'https://via.placeholder.com/20',
         name: 'Book 2',
@@ -45,6 +47,7 @@ export const books: Book[] = [
     },
     {
         imageSrc: 'https://via.placeholder.com/100',
+        bigImageSrc: 'https://via.placeholder.com/400',
         username: 'User 3',
         userAvatarSrc: 'https://via.placeholder.com/20',
         name: 'Book 3',
@@ -65,6 +68,7 @@ export const books: Book[] = [
     },
     {
         imageSrc: 'https://via.placeholder.com/100',
+        bigImageSrc: 'https://via.placeholder.com/400',
         username: 'User 4',
         userAvatarSrc: 'https://via.placeholder.com/20',
         name: 'Book 4',
@@ -86,6 +90,7 @@ export const books: Book[] = [
     },
     {
         imageSrc: 'https://via.placeholder.com/100',
+        bigImageSrc: 'https://via.placeholder.com/400',
         username: 'User 5',
         userAvatarSrc: 'https://via.placeholder.com/20',
         name: 'Book 5',
@@ -107,6 +112,7 @@ export const books: Book[] = [
     },
     {
         imageSrc: 'https://via.placeholder.com/100',
+        bigImageSrc: 'https://via.placeholder.com/400',
         username: 'User user 6',
         userAvatarSrc: 'https://via.placeholder.com/20',
         name: 'Book 6',
@@ -127,6 +133,7 @@ export const books: Book[] = [
     },
     {
         imageSrc: 'https://via.placeholder.com/100',
+        bigImageSrc: 'https://via.placeholder.com/400',
         username: 'User 7',
         userAvatarSrc: 'https://via.placeholder.com/20',
         name: 'Book 7',

@@ -1,10 +1,4 @@
 <div class="book-review-wrapper">
-    <div class="book-review-image">
-        <img
-            [src]="book.imageSrc"
-            alt="book-review-image"
-        />
-    </div>
     <div class="book-review-info">
         <div class="book-review-user">
             <div class="book-review-avatar-name">
@@ -19,28 +13,28 @@
                 </div>
             </div>
         </div>
-        <div>
-            <button (click)="goToFeed()">
-                <img
-                    src="../../../assets/images/arrow-left.svg"
-                    alt="arrow-left"
-                >
-            </button>
-            <div class="book-review-name">
-                {{ book.name }}
+        <div class="book-review-name">
+            {{ book.name }}
+        </div>
+        <div class="book-review-author-price-wrapper">
+            <div class="book-review-author">
+                {{ book.author }}
             </div>
-        </div>
-        <div class="book-review-author">
-            {{ book.author }}
-        </div>
-        <div *ngIf="book.price; else elseBlock" class="book-review-price">
-            $ {{ book.price }}
-        </div>
-        <ng-template #elseBlock>
-            <div class="book-review-price-free">
-                free
+            <div *ngIf="book.price; else elseBlock" class="book-review-price">
+                $ {{ book.price }}
             </div>
-        </ng-template>
+            <ng-template #elseBlock>
+                <div class="book-review-price-free">
+                    free
+                </div>
+            </ng-template>
+        </div>
+        <div class="book-review-image">
+            <img
+                [src]="book.bigImageSrc"
+                alt="book-review-image"
+            />
+        </div>
     </div>
     <div class="book-review-text-wrapper">
         <header>

@@ -4,21 +4,21 @@
 }
 
 @font-face {
-    font-family: ProximaNovaBold;
+    font-family: 'ProximaNovaBold';
     src: url('./assets/fonts/ProximaNova-Bold.ttf') format('opentype');
 }
 
 @font-face {
-    font-family: ProximaNovaBlack;
+    font-family: 'ProximaNovaBlack';
     src: url('./assets/fonts/ProximaNova-Black.ttf') format('opentype');
 }
 
 @font-face {
-    font-family: ProximaNovaExtraBold;
+    font-family: 'ProximaNovaExtraBold';
     src: url('./assets/fonts/ProximaNova-Extrabld.ttf') format('opentype');
 }
 
 @font-face {
-    font-family: ProximaNovaSemibold;
+    font-family: 'ProximaNovaSemibold';
     src: url('./assets/fonts/ProximaNova-Semibold.ttf') format('opentype');
 }

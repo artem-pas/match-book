@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
+/* NgRx */
+import { Store } from '@ngrx/store';
+
+/* Interfaces */
 import { Book } from 'src/app/shared/interfaces';
-import { books } from 'src/app/shared/mock-data';
 
 @Component({
   selector: 'app-feed',
@@ -9,11 +13,14 @@ import { books } from 'src/app/shared/mock-data';
   styleUrls: ['./feed.page.scss']
 })
 export class FeedPage implements OnInit {
-  public books: Book[] = books;
+  public books$: Observable<Book[]>;
 
-  constructor() { }
+  constructor(
+    private store: Store<{ books: Book[] }>
+  ) { }
 
   ngOnInit(): void {
+    this.books$ = this.store.select('books');
   }
 
 }

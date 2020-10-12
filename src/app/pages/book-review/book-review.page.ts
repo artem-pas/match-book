@@ -19,7 +19,6 @@ export class BookReviewPage implements OnInit {
   public book: Book = {} as Book;
 
   constructor(
-    private router: Router,
     private route: ActivatedRoute,
     private store: Store<{ books: Book[] }>
   ) {
@@ -29,10 +28,6 @@ export class BookReviewPage implements OnInit {
     const id = +this.route.snapshot.params['id'];
     this.getBookByIdFromStore(id)
       .subscribe((book: Book) => this.book = book);
-  }
-
-  public goToFeed(): void {
-    this.router.navigate(['/feed']);
   }
 
   private getBookByIdFromStore(id: number): Observable<Book> {

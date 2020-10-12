@@ -4,6 +4,65 @@
     margin: 0 1.875em;
 
     .book-review-info {
+        margin-top: 1.875em;
+
+        .book-review-user {
+            display: flex;
+            margin: 0 0 1em 0;
+    
+            .book-review-avatar-name {
+                display: flex;
+                align-items: center;
+            }
+    
+            .book-review-user-image {
+                display: flex;
+                align-items: center;
+                margin-right: 0.5em;
+    
+                img {
+                    border-radius: 50%;
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+    
+            .book-review-username {
+                font-size: 1em;
+            }
+        }
+
+        .book-review-name {
+            font-family: ProximaNovaBold;
+            font-size: 1.5em;
+            color: $main-dark-blue-color;
+        }
+
+        .book-review-author-price-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 1em 0;
+
+            .book-review-author {
+                font-size: 1em;
+                color: $light-gray-color;
+            }
+    
+            .book-review-price, .book-review-price-free {
+                font-size: 1em;
+                font-weight: bold;
+            }
+
+            .book-review-price-free {
+                max-width: 3em;
+                background-color: $yellow-color;
+                color: white;
+                border-radius: 5px;
+                text-align: center;
+                padding: 2px 10px;
+            }
+        }
+
         .book-review-back {
             background-image: url('../../../assets/images/arrow-left.svg');
             border: none;
@@ -11,13 +70,25 @@
             height: 15px;
             background-color: white;
         }
+
+        .book-review-image {
+            img {
+                width: 317px;
+                height: 317px;
+                border-radius: 3.125em 0.625em 0.625em 0.625em;
+            }
+        }
     }
 
     .book-review-text-wrapper {
+        margin-top: 1.25em;
+        padding-bottom: 70px;
+
         header {
             color: $main-dark-blue-color;
             font-size: 1.125em;
             font-weight: bold;
+            margin-bottom: 1em;
         }
 
         .book-review-text-content {
