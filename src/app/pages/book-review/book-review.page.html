@@ -4,24 +4,24 @@
             <div class="book-review-avatar-name">
                 <div class="book-review-user-image">
                     <img
-                        [src]="book.userAvatarSrc"
+                        [src]="userAvatarSrc"
                         alt="user-avatar"
                     >
                 </div>
                 <div class="book-review-username">
-                    {{ book.username }}
+                    {{ username }}
                 </div>
             </div>
         </div>
         <div class="book-review-name">
-            {{ book.name }}
+            {{ name }}
         </div>
         <div class="book-review-author-price-wrapper">
             <div class="book-review-author">
-                {{ book.author }}
+                {{ author }}
             </div>
-            <div *ngIf="book.price; else elseBlock" class="book-review-price">
-                $ {{ book.price }}
+            <div *ngIf="price; else elseBlock" class="book-review-price">
+                $ {{ price }}
             </div>
             <ng-template #elseBlock>
                 <div class="book-review-price-free">
@@ -31,7 +31,7 @@
         </div>
         <div class="book-review-image">
             <img
-                [src]="book.bigImageSrc"
+                [src]="bigImageSrc"
                 alt="book-review-image"
             />
         </div>
@@ -41,7 +41,7 @@
             Review:
         </header>
         <div class="book-review-text-content">
-            {{ book.review }}
+            {{ review }}
         </div>
     </div>
 </div>
